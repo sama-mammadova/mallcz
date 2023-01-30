@@ -1,13 +1,18 @@
 export class homePage {
 
-    static categoryCarousel() {
+    // returns list of category sliders
+    static categorySliders() {
         return cy.get('.top-icons__list')
     }
 
-    static productCarousel() {
+    // returns list of product sliders
+    static productSliders() {
         return cy.get('.hooper-list')
     }
 
-    static category = ".top-icons__item"
-    static product = ".product-box-simple__block"
+    static categorySelector = ".top-icons__item"
+    static productSelector = ".product-box-simple__block"
+    static categoryTitleSelector = ".top-icons__caption"
+    static productTitleSelector = ".product-box-simple__body__title"
+
 }
